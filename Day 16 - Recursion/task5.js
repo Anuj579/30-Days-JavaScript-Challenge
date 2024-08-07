@@ -9,7 +9,3 @@ function reverse(str) {
 }
 
 console.log(reverse("hello"));
-
-let s = "hello"
-console.log(s.slice(1,-1));
-
