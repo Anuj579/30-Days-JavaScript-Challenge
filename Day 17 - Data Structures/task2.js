@@ -31,7 +31,7 @@ class LinkedList {
         if (this.head.next === null) {
             this.head = null;
 
-         // find the second-last node and set its next to null
+            // find the second-last node and set its next to null
         } else {
             let current = this.head
             while (current.next.next !== null) {
@@ -41,9 +41,9 @@ class LinkedList {
         }
     }
 
-    display(){
+    display() {
         if (this.head === null) {
-            console.log('The list is empty.');  
+            console.log('The list is empty.');
             return;
         }
         let current = this.head

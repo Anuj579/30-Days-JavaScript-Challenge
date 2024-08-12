@@ -1,7 +1,7 @@
 // Activity 1: Linked List - task1 to task2
 
-class Node{
-    constructor(value){
+class Node {
+    constructor(value) {
         this.value = value;
         this.next = null;
     }

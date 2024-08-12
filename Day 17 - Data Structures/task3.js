@@ -35,4 +35,3 @@ console.log(`Element removed: ${stack.pop()}`);
 console.log(`Element removed: ${stack.pop()}`);
 console.log(`Element removed: ${stack.pop()}`);
 console.log(`Element removed: ${stack.pop()}`);
- 

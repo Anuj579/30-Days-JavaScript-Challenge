@@ -10,7 +10,7 @@ class BinaryTree {
     constructor(root = null) {
         this.root = root
     }
-    
+
     insert(value) {
         const newNode = new Node(value)
         if (this.root === null) {
@@ -38,8 +38,8 @@ class BinaryTree {
 
     inOrderTraversal(node = this.root) {
         if (node !== null) {
-            this.inOrderTraversal(node.left); 
-            console.log(node.value);          
+            this.inOrderTraversal(node.left);
+            console.log(node.value);
             this.inOrderTraversal(node.right);
         }
     }
