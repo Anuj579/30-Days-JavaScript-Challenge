@@ -22,5 +22,5 @@ console.log(`Array: ${arr}`);
 
 let target = 6
 
-const index = binarySearch(arr.sort(), target)
+const index = binarySearch(arr, target)
 console.log(`Element ${target} is found at index: ${index}`);
