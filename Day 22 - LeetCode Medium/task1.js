@@ -64,20 +64,20 @@ function addTwoNumbers(list1, list2) {
     }
 
     const addedList = new LinkedList();
-    addedList.head = dummy.next; 
+    addedList.head = dummy.next;
 
     return addedList;
 }
 
 const list1 = new LinkedList()
-list1.addNode(2)
-list1.addNode(4)
 list1.addNode(3)
+list1.addNode(5)
+list1.addNode(9)
 
 const list2 = new LinkedList()
-list2.addNode(5)
+list2.addNode(8)
 list2.addNode(6)
-list2.addNode(4)
+list2.addNode(7)
 
 console.log('List 1:');
 list1.display()
@@ -87,5 +87,3 @@ list2.display()
 const addedList = addTwoNumbers(list1, list2)
 console.log('Added List:');
 addedList.display()
-
-
