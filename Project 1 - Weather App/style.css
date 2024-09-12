@@ -3,7 +3,7 @@
 
 :root {
     --radius: 5px;
-    --shadow: 0 0 10px rgb(197, 197, 197);
+    --shadow: 0 0 10px rgba(197, 197, 197, 0.253);
 }
 
 body {
@@ -12,11 +12,11 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
-    background: linear-gradient(135deg, #D9E9FE 10%, #6581a7 100%);
+    /* background: linear-gradient(135deg, #212e3b 10%, #181729 100%); */
 }
 
 .container{
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     padding: 0px 16px;
 }
@@ -34,14 +34,14 @@ body {
 
 .search-bar>input {
     padding: 10px;
-    border: 1px solid rgba(128, 128, 128, 0.219);
+    border: 1px solid rgba(128, 128, 128, 0.479);
     border-radius: var(--radius);
     width: 100%;
     font-size: 16px;
     box-shadow: var(--shadow);
 
     &:focus-visible{
-        outline: 2px solid rgb(179, 179, 179);
+        outline: 2px solid rgb(155, 155, 155);
         outline-offset: 2px;
         /* border-color: black; */
     }
@@ -59,8 +59,7 @@ button {
     background: white;
     font-size: 14px;
     font-weight: 600;
-    color: #47474b;
-    /* letter-spacing: 1.1px; */
+    color: #57575c;
     transition: all 0.2s ease;
     box-shadow: var(--shadow);
 
@@ -74,7 +73,8 @@ button {
 }
 
 .current-weather-card{
-    background: rgba(255, 255, 255, 0.774);
+    background: rgba(255, 255, 255, 0.61);
+    backdrop-filter: blur(10px);
     padding: 24px;
     margin: 30px 0px;
     border-radius: var(--radius);
@@ -113,14 +113,32 @@ button {
 }
 
 .card{
-    background: rgba(255, 255, 255, 0.63);
+    background: rgba(255, 255, 255, 0.521);
     padding: 22px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+    text-align: center;
 }
 
-.card>div{
-    margin-top: 2.5rem;
+.card>h3{
+    margin: 0;
+    font-weight: 600;
+    text-align: left;
+    font-size: 20px;
+}
+
+.card>img{
+    width: 85px;
+    margin: 5px 0px -10px 0px;
+}
+
+.card>p{
+    margin: 0;
+}
+
+.forecast-temperature{
+    font-size: 22px;
+    font-weight: 600;
 }
 
 @media screen and (min-width:768px) {
@@ -130,5 +148,10 @@ button {
 
     .card{
         width: 100%;
+        transition: all 0.3s ease;
+
+        &:hover{
+            transform: translateY(-10px)        
+        }
     }
 }
